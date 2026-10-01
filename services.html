@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>River Bend Yoga | Services</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="logo-link" href="index.html"><img src="yoga-logo_c.png" alt="River Bend Yoga logo"></a>
+      <nav class="site-nav" aria-label="Main navigation">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="services.html" aria-current="page">Services</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="events.html">Events</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="split-section">
+      <div class="split-copy">
+        <h1>Classes and Private Sessions</h1>
+        <p class="lead">Choose a practice based on your experience, energy level, and what you need that day. Every class is designed to feel welcoming and easy to understand.</p>
+      </div>
+      <div class="split-media">
+        <img src="yoga-studio_c.png" alt="Bright River Bend Yoga studio with open floor space for classes">
+      </div>
+    </section>
+
+    <section class="section-block">
+      <div class="card-grid">
+        <article class="card"><h2>Gentle Yoga</h2><p>A slower class with clear instruction and time to settle into each movement. This is a welcoming option for beginners and anyone who prefers a softer pace.</p></article>
+        <article class="card"><h2>Vinyasa</h2><p>A more active class that connects movement with breathing. Students can follow a steady sequence while working at their own pace.</p></article>
+        <article class="card"><h2>Restorative Yoga</h2><p>A quiet practice focused on slowing down, resting, and releasing some of the tension that builds up during a busy week.</p></article>
+        <article class="card"><h2>Private Sessions</h2><p>One-on-one time to ask questions, become more comfortable with the basics, or focus on a personal goal.</p></article>
+      </div>
+    </section>
+
+    <section class="feature-panel" aria-labelledby="class-finder-heading">
+      <div class="feature-copy">
+        <p class="eyebrow">Not sure where to start?</p>
+        <h2 id="class-finder-heading">Find Your Class</h2>
+        <p>Choose what feels most like you today. River Bend Yoga will suggest a class that matches your experience, energy, and main goal.</p>
+      </div>
+      <div class="class-finder">
+        <div class="finder-field">
+          <label for="finder-experience">Your yoga experience</label>
+          <select id="finder-experience">
+            <option value="">Choose one</option>
+            <option value="new">New to yoga</option>
+            <option value="some">Some experience</option>
+            <option value="regular">Regular practice</option>
+          </select>
+        </div>
+        <div class="finder-field">
+          <label for="finder-energy">Your energy today</label>
+          <select id="finder-energy">
+            <option value="">Choose one</option>
+            <option value="low">Low / need a slower pace</option>
+            <option value="medium">Steady / open to movement</option>
+            <option value="high">Ready for something active</option>
+          </select>
+        </div>
+        <div class="finder-field">
+          <label for="finder-goal">What do you want most?</label>
+          <select id="finder-goal">
+            <option value="">Choose one</option>
+            <option value="learn">Learn the basics</option>
+            <option value="relax">Relax and reset</option>
+            <option value="move">Move and build energy</option>
+            <option value="personal">Personal attention</option>
+          </select>
+        </div>
+        <button type="button" id="find-class-button">Find My Class</button>
+        <p id="finder-feedback" class="feature-feedback" role="status" aria-live="polite"></p>
+        <div id="class-result" class="class-result" hidden aria-live="polite">
+          <p class="result-label">Your class match</p>
+          <h3 id="class-result-name"></h3>
+          <p id="class-result-description"></p>
+          <a class="text-link" href="events.html">Ask about this class</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="callout">
+      <h2>Pricing Overview</h2>
+      <p>The studio offers individual classes, multi-class plans, and private sessions. Use the Events page form to ask about current rates or the best option for your needs.</p>
+    </section>
+  </main>
+
+  <footer class="site-footer"><p>&copy; 2026 River Bend Yoga. A calm and welcoming place to practice.</p></footer>
+  <script src="app.js"></script>
+</body>
+</html>

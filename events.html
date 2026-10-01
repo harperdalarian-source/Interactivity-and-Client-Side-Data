@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>River Bend Yoga | Events</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="logo-link" href="index.html"><img src="yoga-logo_c.png" alt="River Bend Yoga logo"></a>
+      <nav class="site-nav" aria-label="Main navigation">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="events.html" aria-current="page">Events</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <h1>Workshops and Events</h1>
+    <p class="lead">Monthly workshops give students another way to slow down, learn, and spend a little more time with a specific part of their practice.</p>
+
+    <figure>
+      <img src="yoga-workshop_c.png" alt="Small group participating in a River Bend Yoga workshop">
+      <figcaption>River Bend Yoga workshops offer extra time for guided practice and questions in a supportive setting.</figcaption>
+    </figure>
+
+    <section class="section-block">
+      <h2>This Month's Workshop List</h2>
+      <div class="card-grid">
+        <article class="card"><h3>Beginner Foundations</h3><p>A comfortable introduction to basic movements, breathing, and what to expect in class.</p></article>
+        <article class="card"><h3>Breath and Reset</h3><p>A slower session centered on breathing and making space to unwind.</p></article>
+        <article class="card"><h3>Restorative Practice</h3><p>A quiet workshop for students who want a gentle, restful experience.</p></article>
+      </div>
+    </section>
+
+    <section class="form-section">
+      <h2>Request a Spot or Ask a Question</h2>
+      <p>Fill out the form if you are interested in a class, private session, or workshop. This is an interest request, not an online purchase or confirmed reservation.</p>
+      <form action="#" method="post" id="interest-form">
+        <fieldset>
+          <legend>Your Information</legend>
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" required minlength="2" autocomplete="name" aria-describedby="name-error">
+          <small class="error-message" id="name-error" aria-live="polite"></small>
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required autocomplete="email" aria-describedby="email-error">
+          <small class="error-message" id="email-error" aria-live="polite"></small>
+          <label for="phone">Phone (optional):</label>
+          <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="555-555-5555" autocomplete="tel" aria-describedby="phone-error">
+          <small class="error-message" id="phone-error" aria-live="polite"></small>
+        </fieldset>
+        <fieldset>
+          <legend>Your Interest</legend>
+          <label for="interest">Class or event interest:</label>
+          <select id="interest" name="interest" required>
+            <option value="">Choose one</option>
+            <option value="gentle">Gentle Yoga</option>
+            <option value="vinyasa">Vinyasa</option>
+            <option value="restorative">Restorative Yoga</option>
+            <option value="private">Private Session</option>
+            <option value="workshop">Monthly Workshop</option>
+          </select>
+          <small class="error-message" id="interest-error" aria-live="polite"></small>
+          <label for="experience">Experience level:</label>
+          <select id="experience" name="experience" required>
+            <option value="">Choose one</option>
+            <option value="new">New to yoga</option>
+            <option value="some">Some experience</option>
+            <option value="regular">Regular practice</option>
+          </select>
+          <small class="error-message" id="experience-error" aria-live="polite"></small>
+        </fieldset>
+        <fieldset>
+          <legend>Preferred Contact Method</legend>
+          <div class="radio-row">
+            <label><input type="radio" name="contact-method" value="email" required> Email</label>
+            <label><input type="radio" name="contact-method" value="phone"> Phone</label>
+          </div>
+          <small class="error-message" id="contact-method-error" aria-live="polite"></small>
+        </fieldset>
+        <fieldset>
+          <legend>Message</legend>
+          <label for="message">What would you like us to know?</label>
+          <textarea id="message" name="message" rows="5" minlength="10" required aria-describedby="message-error"></textarea>
+          <small class="error-message" id="message-error" aria-live="polite"></small>
+        </fieldset>
+        <button type="submit">Send Interest Request</button>
+        <p id="form-status" class="form-status" role="status" aria-live="polite"></p>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer"><p>&copy; 2026 River Bend Yoga. A calm and welcoming place to practice.</p></footer>
+  <script src="app.js"></script>
+</body>
+</html>
